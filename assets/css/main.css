@@ -1,0 +1,119 @@
+.background {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+html, body {
+    background: #f2f6f9;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+img.logo {
+    width: 300px;
+    position: relative;
+
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin:auto;
+}
+.logo {
+    width: 300px;
+    position: absolute;
+
+    display: block;
+    left: 0;
+    right: 0;
+    top: 200px;
+    margin:auto;
+    text-align: center;
+    font-size: 48px;
+    color: #709c43;
+    text-shadow: 0 0 10px black; 
+}
+
+.projects {
+    top: 100%;
+    width: 100%;
+    height: auto;
+    position: absolute
+}
+.projects p.title {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 200px;
+    margin:auto;
+    text-align: center;
+    font-size: 48px;
+    color: #f2f6f9;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    padding: 20px 0 40px 0
+}
+.block {
+    width: 100%;
+    height: 500px;
+}
+.back {
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0
+}
+.back img {
+    height: 500px;
+    position: absolute
+}
+.front {
+    z-index: 5;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    font-size: 28px;
+}
+.back.left img{
+    left: 0
+}
+.front.left {
+    background: #000;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    left: 0
+}
+.block:hover .front.left{
+    transition: .5s;
+    left: 50%
+}
+.block:not(:hover) .front.left{
+    transition: .5s;
+    left: 0
+}
+.back.right img{
+    right: 0
+}
+.front.right {
+    background: rgb(255, 255, 255);
+    color: rgb(0,0,0);
+    text-shadow: 0 0 10px #000;
+    right: 0
+}
+.block:hover .front.right{
+    transition: .5s;
+    right: 50%
+}
+.block:not(:hover) .front.right{
+    transition: .5s;
+    right: 0
+}
+.front p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
